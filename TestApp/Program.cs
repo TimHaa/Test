@@ -12,6 +12,7 @@ namespace TestApp
             var lol = "lol";
             var test = "lol";
             int h = 100;
+            var muhj = 33333;
         }
     }
 }
