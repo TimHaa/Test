@@ -8,6 +8,7 @@ namespace TestApp
         {
             Console.WriteLine("Hello World!");
             int a = 0;
+            string b = "test";
         }
     }
 }
