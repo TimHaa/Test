@@ -7,12 +7,12 @@ namespace TestApp
         static void Main(string[] args)
         {
             Console.WriteLine("Hello World!");
-            int a = 0;
-            string b = "test";
-            var lol = "lol";
-            var test = "lol";
-            int h = 100;
-            var muhj = 33333;
+            Mean mObject = new Mean();
+            int m = 9;
+            int[] a = { 2, 4, 20 };
+            int solution = mObject.Calc(a, m);
+            Console.WriteLine(solution);
+            Console.ReadLine();
         }
     }
 }
