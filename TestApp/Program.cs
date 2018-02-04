@@ -10,7 +10,7 @@ namespace TestApp
             int a = 0;
             string b = "test";
             float d = 3.5f;
-
+            var test = "lol";
         }
     }
 }
