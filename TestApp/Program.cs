@@ -9,7 +9,7 @@ namespace TestApp
             Console.WriteLine("Hello World!");
             int a = 0;
             string b = "test";
-            float d = 3.2f;
+            double c = 3.3;
 
         }
     }
