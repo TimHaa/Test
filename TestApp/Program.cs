@@ -11,6 +11,7 @@ namespace TestApp
             string b = "test";
             var lol = "lol";
             var test = "lol";
+            int h = 100;
         }
     }
 }
