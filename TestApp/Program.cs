@@ -9,9 +9,8 @@ namespace TestApp
             Console.WriteLine("Hello World!");
             int a = 0;
             string b = "test";
-            double c = 3.3;
-            var hallo = "lol";
-
+            var lol = "lol";
+            var test = "lol";
         }
     }
 }
