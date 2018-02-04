@@ -10,6 +10,7 @@ namespace TestApp
             int a = 0;
             string b = "test";
             double c = 3.3;
+            var hallo = "lol";
 
         }
     }
