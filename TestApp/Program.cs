@@ -6,12 +6,10 @@ namespace TestApp
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
-            Mean mObject = new Mean();
-            int m = 9;
-            int[] a = { 2, 4, 20 };
-            int solution = mObject.Calc(a, m);
-            Console.WriteLine(solution);
+            SortOdd sObject = new SortOdd();
+            int[] arrIn = { 7, 10, 11, 3, 6, 9, 2, 13, 0};
+
+            sObject.Sort(arrIn);
             Console.ReadLine();
         }
     }
