@@ -6,10 +6,9 @@ namespace TestApp
     {
         static void Main(string[] args)
         {
-            SortOdd sObject = new SortOdd();
-            int[] arrIn = { 7, 10, 11, 3, 6, 9, 2, 13, 0};
+            Chocolats s = new Chocolats();
 
-            sObject.Sort(arrIn);
+            s.Buy();
             Console.ReadLine();
         }
     }
