@@ -6,10 +6,7 @@ namespace TestApp
     {
         static void Main(string[] args)
         {
-            Chocolats s = new Chocolats();
-
-            s.Buy();
-            Console.ReadLine();
+            
         }
     }
 }
