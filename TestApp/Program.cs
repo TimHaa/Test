@@ -6,7 +6,7 @@ namespace TestApp
     {
         static void Main(string[] args)
         {
-            
+            SubString s = new SubString();
         }
     }
 }
