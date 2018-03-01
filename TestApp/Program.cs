@@ -6,7 +6,10 @@ namespace TestApp
     {
         static void Main(string[] args)
         {
-            Console.WriteLine();
+            EquationSolver e = new EquationSolver();
+            e.Linear("5x+x=2");//TODO x=2
+            Console.ReadLine();
+
         }
     }
 }
