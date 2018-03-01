@@ -87,7 +87,5 @@ namespace TestApp
                 Console.WriteLine("left nr: {0};right nr : {1}", nrLSum, nrRSum);
             }
         }
-
-
     }
 }
