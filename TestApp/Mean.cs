@@ -6,11 +6,7 @@ namespace TestApp
 {
     class Mean
     {
-        public Mean()
-        {
-
-        }
-
+        public Mean() { }
 
         public int Calc(int[] arr, int mean) {
             int arraySum = 0;
@@ -20,8 +16,6 @@ namespace TestApp
             }
             int sol = mean * (arr.Length + 1) - arraySum;
             return sol;
-            
-
         }
     }
 }

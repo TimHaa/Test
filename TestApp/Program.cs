@@ -6,10 +6,8 @@ namespace TestApp
     {
         static void Main(string[] args)
         {
-            MaxSumEasy m = new MaxSumEasy();
-            int[] input = { 1, 2, 3 };
-            m.Sum(input);
-
+            SubString s = new SubString();
+            s.Look();
             Console.ReadLine();
         }
     }

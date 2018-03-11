@@ -13,12 +13,9 @@ namespace TestApp
         ////testList1.Add(4);
         //ListZero n = new ListZero();
         //n.Sort(testList1);
-
-        
-        
         public void Sort(List<int> l) {
+            //move zeros to beginning of a List
             List<int> sorted = new List<int>();
-            
             List<int> withoutZero = new List<int>(l);
             foreach (int i in l){
                 if (i == 0)
@@ -27,7 +24,6 @@ namespace TestApp
                     withoutZero.Remove(0);
                 }
             }
-
             sorted.AddRange(withoutZero);
             PrintList(l);
             PrintList(sorted);

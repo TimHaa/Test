@@ -8,45 +8,26 @@ namespace TestApp
     class SubString
     {
         public SubString() { }
-
-        public void Look()
-        {
-
+        public void Look() {
+            //delete characters that are less than min from a string
             string input = Console.ReadLine();
-            int k = Convert.ToInt32(Console.ReadLine());
-            //string input = inputString;
+            int min = Convert.ToInt32(Console.ReadLine());
             int count = 0;
-            for (int i =0; i < input.Length; i++)
-            {
-                
-                string a = input[i].ToString();
+            for (int i =0; i < input.Length; i++) {
+                string currentChar = input[i].ToString();
                 int searchIndex = 0;
-                for (int j = 0; j < k; j++)
-                {
-                    //Console.WriteLine(a);
-                    //Console.WriteLine(searchIndex);
-                    //Console.WriteLine(input.Substring(searchIndex));
-
-
-                    if (input.Substring(searchIndex).Contains(a))
-                    {
-
-                        searchIndex += input.Substring(searchIndex).IndexOf(a) + 1;
+                for (int j = 0; j < min; j++) {
+                    string remainingStr = input.Substring(searchIndex);
+                    if (remainingStr.Contains(currentChar)) {
+                        searchIndex += remainingStr.IndexOf(currentChar) + 1;
                         count++;
-                        //Console.WriteLine(a);
-                        //Console.WriteLine(count);
-                        //Console.WriteLine(searchIndex);
                     }
                     else { break; }
                     if (searchIndex == input.Length) { break; }
                 }
-                if (count < k) { input = input.Replace(a, ""); i--; }
-                
+                if (count < min) { input = input.Replace(currentChar, ""); i--; }
                 count = 0;
-                
             }
-            
-
             Console.WriteLine(input);
             Console.ReadLine();
         }

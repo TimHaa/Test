@@ -7,12 +7,10 @@ namespace TestApp
     class NaturalProgression
     {
         public NaturalProgression(){}
-
         
-
-        public double CalcNth(int a, int r, int n)
+        public double CalcNth(int constant, int basis, int exp)
         {
-            double s = a *Math.Pow(r, n-1);
+            double s = constant * Math.Pow(basis, exp-1);
             Console.WriteLine(s);
             return s;
         }
