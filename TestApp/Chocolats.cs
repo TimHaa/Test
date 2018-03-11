@@ -10,6 +10,7 @@ namespace TestApp
         public Chocolats() { }
         public void Buy()
         {
+            Console.WriteLine("how many times?");
             int t = Convert.ToInt32(Console.ReadLine());
             if (1 <= t && t <= 101)//test if t is possible
             {
@@ -28,6 +29,7 @@ namespace TestApp
         }
         private void Calc()
         {
+            
             int m = 100-Convert.ToInt32(Console.ReadLine());//get Input from User -> Money spent
             
             if (0 <= m && m <= 100)
@@ -52,7 +54,7 @@ namespace TestApp
                 
             }else
             {
-                output += "Input for m not viable.";
+                output += "Input for m not viable.\n";
             }
            
         }
